@@ -1,0 +1,43 @@
+
+<div class="container">
+<ul>
+    <% biodata.forEach(function(biodata) { %>
+    <hr>
+        <li><h4>Surname: <%= biodata.surName %></h4></li>
+        <li><h4>First Name: <%= biodata.firstName %></h4></li>
+        <li><h4>Middle Name: <%= biodata.middleName %></h4></li>
+        <h3>Sex</h3>
+         <%= biodata.male %>
+         <%= biodata.female %>
+        <li><h4>Email: <%= biodata.Email %></h4></li>
+        <li><h4>Phone Number: <%= biodata.Phone_Number %></h4></li>
+        <li><h4>Home Address: <%= biodata.Home_Address %></h4></li>
+        <li><h4>Name of Institution: <%= biodata.Institution %></h4></li>
+        <li><h4>Institution Address: <%= biodata.Institution_Address %></h4></li>
+        <h3>Subjects</h3>
+        <li> <%= biodata.arbLang %></li>
+        <li> <%= biodata.arbLit %></li>
+        <li> <%= biodata.civEdu %></li>
+        <li> <%= biodata.econs %></li>
+        <li> <%= biodata.engLang %></li>
+        <li> <%= biodata.gov %></li>
+        <li> <%= biodata.his %></li>
+        <li> <%= biodata.iss %></li>
+        <li> <%= biodata.math %></li>
+        <li> <%= biodata.yorLang %></li>
+        
+    <% }) %>
+</ul>
+<hr>
+</div>
+
+<style>
+body {
+    background-color:#3498db;
+    color: #fff;
+}
+
+.container{
+    text-align: center;
+}
+</style>
